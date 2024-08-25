@@ -3,14 +3,14 @@
 [ext_resource type="PackedScene" uid="uid://c35i4ikrkpjul" path="res://terrains/floor.tscn" id="1_biwwp"]
 [ext_resource type="PackedScene" uid="uid://gwcd0otvhqnb" path="res://camera/action_camera.tscn" id="2_tebcp"]
 [ext_resource type="PackedScene" uid="uid://26liksxtvbsy" path="res://environment/light.tscn" id="3_4i7j2"]
-[ext_resource type="PackedScene" uid="uid://s8rn8shwb1w7" path="res://ui/ui.tscn" id="4_vvhgh"]
+[ext_resource type="PackedScene" uid="uid://efo3puppn785" path="res://ui_2/ui.tscn" id="4_woxgw"]
 
 [node name="Main" type="Node3D"]
 
 [node name="floor" parent="." instance=ExtResource("1_biwwp")]
 
 [node name="action_camera" parent="." instance=ExtResource("2_tebcp")]
-transform = Transform3D(0.999453, -0.0191685, 0.0269589, 0.000304494, 0.820284, 0.571956, -0.0330775, -0.571635, 0.819841, 0, 14.7844, 0)
+transform = Transform3D(0.99846, -0.0554592, 0.00161511, 0.0470866, 0.862402, 0.50403, -0.029346, -0.503177, 0.863685, 0, 14.7844, 0)
 
 [node name="light" parent="." instance=ExtResource("3_4i7j2")]
 transform = Transform3D(1, 0, 0, 0, 0.711119, 0.703072, 0, -0.703072, 0.711119, 0, 39.8789, 0)
@@ -29,4 +29,6 @@ handle_input_locally = false
 size = Vector2i(1024, 512)
 render_target_update_mode = 4
 
-[node name="ui" parent="SubViewportContainer/SubViewport" instance=ExtResource("4_vvhgh")]
+[node name="ui" parent="SubViewportContainer/SubViewport" instance=ExtResource("4_woxgw")]
+
+[editable path="action_camera"]

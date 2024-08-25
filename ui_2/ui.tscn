@@ -1,0 +1,27 @@
+[gd_scene load_steps=2 format=3 uid="uid://efo3puppn785"]
+
+[ext_resource type="Script" path="res://ui_2/ui.gd" id="1_gjmtl"]
+
+[node name="ui" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_gjmtl")
+
+[node name="main_menu" type="MenuButton" parent="."]
+layout_mode = 0
+offset_right = 128.0
+offset_bottom = 40.0
+text = "Menu"
+flat = false
+item_count = 3
+popup/item_0/text = "full screen"
+popup/item_0/checkable = 1
+popup/item_1/id = 1
+popup/item_1/disabled = true
+popup/item_1/separator = true
+popup/item_2/text = "Exit"
+popup/item_2/id = 2
